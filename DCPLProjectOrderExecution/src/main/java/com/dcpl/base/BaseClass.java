@@ -105,7 +105,7 @@ public class BaseClass {
 		
 		getDriver().manage().timeouts().pageLoadTimeout(Integer.parseInt(prop.getProperty("pageLoadTimeOut")), TimeUnit.SECONDS);
 		//Launching the URL
-		getDriver().get(prop.getProperty("salesURL"));
+		getDriver().get(prop.getProperty("orderExecutionURL"));
 		
 
 	}

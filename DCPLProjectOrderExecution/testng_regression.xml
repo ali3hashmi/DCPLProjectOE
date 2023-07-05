@@ -1,15 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-<listeners>
+	<listeners>
 		<listener class-name="com.dcpl.utility.ListenerClass">
-		<listener class-name="com.dcpl.failedtestcases.RetryListenerClass"></listener>
+			<listener
+				class-name="com.dcpl.failedtestcases.RetryListenerClass"></listener>
 		</listener>
 	</listeners>
-  <test thread-count="5" name="Test">
-  <parameter name="browser" value="chrome"></parameter>
-  <classes>
-  <class name="com.dcpl.testcase.OELoginPageTest"></class>
-  </classes>
-  </test> <!-- Test -->
+	<test thread-count="5" name="Test">
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Regression"></include>
+			</run>
+		</groups>
+		<classes>
+			<!--  <class name="com.dcpl.testcase.OELoginPageTest">
+				<methods>
+					<exclude name="OELoginTest"></exclude>
+				</methods>
+			</class>
+		
+		
+			<class name="com.dcpl.testcase.ReleaseOrderPageTest">
+				<methods>
+					<exclude name="verifyReleaseOrderByStoreCode"></exclude>
+					<exclude name="verifyReleaseOrderPageInputFields"></exclude>
+					<exclude name="verifyReleaseOrderByOrderNo"></exclude>
+				</methods>
+			</class>-->
+		
+	
+			<class name="com.dcpl.testcase.PSQFloorPercentageTest">
+			<methods>
+			<include name="createFloorPercentage"></include>
+			<include name="searchFloorPercentage"></include>
+			<exclude name="editFloorPercentage"></exclude>
+			<include name="deleteFloorPercentage"></include>
+			</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
 </suite> <!-- Suite -->

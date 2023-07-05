@@ -19,6 +19,21 @@ public class OrderExecutionHomePage extends Action{
 	@FindBy(xpath = "//h1[1]")
 	private WebElement OEHomeText;
 	
+	@FindBy(xpath = "//a[normalize-space()='Release']")
+	private WebElement releaseMainMenu;
+	
+	@FindBy(linkText = "Release Order")
+	private WebElement releaseOrderSubMenu;
+	
+	@FindBy(xpath = "(//a[@role='button'][normalize-space()='PSQ'])[1]")
+	private WebElement psqMainMenu;
+	
+	@FindBy(xpath = "(//a[@role='button'][normalize-space()='PSQ'])[2]")
+	private WebElement psqSubMenu;
+	
+	@FindBy(css = "a[funcid='342']")
+	private WebElement floorPercentageMenu;
+	
 
 
 
@@ -27,4 +42,23 @@ public class OrderExecutionHomePage extends Action{
 		String oePageHomeText = OEHomeText.getText();
 		return oePageHomeText;
 	}
+	
+	public ReleaseOrderPage releaseOrder(ReleaseOrderPage releaseOrderPage) {
+		
+		super.click(getDriver(), releaseMainMenu);
+		super.click(getDriver(), releaseOrderSubMenu);
+		
+		return new ReleaseOrderPage();
+	}
+	
+	public FloorPercentageCreate psqFloorPercentageCreate(FloorPercentageCreate floorPercentageCreate) {
+		
+		super.click(getDriver(), psqMainMenu);
+		super.click(getDriver(), psqSubMenu);
+		super.click(getDriver(), floorPercentageMenu);
+		
+		return new FloorPercentageCreate();
+		
+	}
+	
 }

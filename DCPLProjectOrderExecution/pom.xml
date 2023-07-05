@@ -88,7 +88,7 @@
 <dependency>
     <groupId>io.github.bonigarcia</groupId>
     <artifactId>webdrivermanager</artifactId>
-    <version>5.3.2</version>
+    <version>5.3.3</version>
 </dependency>
 
 
@@ -127,7 +127,7 @@
         <configuration>
         <testFailureIgnore>true</testFailureIgnore>
           <suiteXmlFiles>
-            <suiteXmlFile>${xmlFiles}</suiteXmlFile>
+            <suiteXmlFile>testng_regression.xml</suiteXmlFile>
           </suiteXmlFiles>
         <systemPropertyVariables> 
           <appURL>${project.url}</appURL>

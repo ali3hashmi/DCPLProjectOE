@@ -10,8 +10,10 @@ import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
 
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
@@ -74,10 +76,15 @@ public class BaseClass {
 
 		if(browserName.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();	
+			ChromeOptions options =new ChromeOptions();
+			options.addArguments("--remote-allow-origins=*");
+			DesiredCapabilities cap=new DesiredCapabilities();
+			cap.setCapability(ChromeOptions.CAPABILITY, options);
+			options.merge(cap);
 			//System.setProperty("webdriver.chrome.driver", prop.getProperty("chromepath"));
 			//driver = new ChromeDriver();
 			// Set Browser to ThreadLocalMap
-			driver.set(new ChromeDriver());
+			driver.set(new ChromeDriver(options));
 			
 			
 		}

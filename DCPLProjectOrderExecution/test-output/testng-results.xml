@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="108789" started-at="2023-07-05T18:10:01 IST" finished-at="2023-07-05T18:11:49 IST">
+    <groups>
+      <group name="Sanity">
+        <method signature="PSQFloorPercentageTest.createFloorPercentage(java.util.HashMap)[pri:0, instance:com.dcpl.testcase.PSQFloorPercentageTest@133e16fd]" name="createFloorPercentage" class="com.dcpl.testcase.PSQFloorPercentageTest"/>
+        <method signature="PSQFloorPercentageTest.searchFloorPercentage(java.util.HashMap)[pri:1, instance:com.dcpl.testcase.PSQFloorPercentageTest@133e16fd]" name="searchFloorPercentage" class="com.dcpl.testcase.PSQFloorPercentageTest"/>
+        <method signature="PSQFloorPercentageTest.deleteFloorPercentage(java.util.HashMap)[pri:3, instance:com.dcpl.testcase.PSQFloorPercentageTest@133e16fd]" name="deleteFloorPercentage" class="com.dcpl.testcase.PSQFloorPercentageTest"/>
+      </group> <!-- Sanity -->
+      <group name="Regression">
+        <method signature="PSQFloorPercentageTest.createFloorPercentage(java.util.HashMap)[pri:0, instance:com.dcpl.testcase.PSQFloorPercentageTest@133e16fd]" name="createFloorPercentage" class="com.dcpl.testcase.PSQFloorPercentageTest"/>
+        <method signature="PSQFloorPercentageTest.searchFloorPercentage(java.util.HashMap)[pri:1, instance:com.dcpl.testcase.PSQFloorPercentageTest@133e16fd]" name="searchFloorPercentage" class="com.dcpl.testcase.PSQFloorPercentageTest"/>
+        <method signature="PSQFloorPercentageTest.deleteFloorPercentage(java.util.HashMap)[pri:3, instance:com.dcpl.testcase.PSQFloorPercentageTest@133e16fd]" name="deleteFloorPercentage" class="com.dcpl.testcase.PSQFloorPercentageTest"/>
+      </group> <!-- Regression -->
+    </groups>
+    <test name="Test" duration-ms="108789" started-at="2023-07-05T18:10:01 IST" finished-at="2023-07-05T18:11:49 IST">
+      <class name="com.dcpl.testcase.PSQFloorPercentageTest">
+        <test-method status="PASS" signature="readConfig()[pri:0, instance:com.dcpl.testcase.PSQFloorPercentageTest@133e16fd]" name="readConfig" is-config="true" duration-ms="487" started-at="2023-07-05T18:10:00 IST" finished-at="2023-07-05T18:10:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readConfig -->
+        <test-method status="PASS" signature="setUP(java.lang.String)[pri:0, instance:com.dcpl.testcase.PSQFloorPercentageTest@133e16fd]" name="setUP" is-config="true" duration-ms="12268" started-at="2023-07-05T18:10:03 IST" finished-at="2023-07-05T18:10:15 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method status="PASS" signature="createFloorPercentage(java.util.HashMap)[pri:0, instance:com.dcpl.testcase.PSQFloorPercentageTest@133e16fd]" name="createFloorPercentage" duration-ms="29335" started-at="2023-07-05T18:10:15 IST" description="verifying and validating floor percentage create page" data-provider="PSQFloorPercentageData" finished-at="2023-07-05T18:10:45 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{role=Valuator, is_active=1, year=2023, storename=TS Madision, hrms_id=110, password=Pass@123, month=Jul, grade=A, segment=Gold, company=CKCCO-C. Krishniah Chetty & Co. Private Limited , editfloorpercentagevalue=75, region=Bangalore, floorpercentage=50}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createFloorPercentage -->
+        <test-method status="PASS" signature="closeWebApplication()[pri:0, instance:com.dcpl.testcase.PSQFloorPercentageTest@133e16fd]" name="closeWebApplication" is-config="true" duration-ms="1645" started-at="2023-07-05T18:10:45 IST" finished-at="2023-07-05T18:10:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWebApplication -->
+        <test-method status="PASS" signature="setUP(java.lang.String)[pri:0, instance:com.dcpl.testcase.PSQFloorPercentageTest@133e16fd]" name="setUP" is-config="true" duration-ms="5133" started-at="2023-07-05T18:10:47 IST" finished-at="2023-07-05T18:10:52 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method status="PASS" signature="searchFloorPercentage(java.util.HashMap)[pri:1, instance:com.dcpl.testcase.PSQFloorPercentageTest@133e16fd]" name="searchFloorPercentage" duration-ms="24908" started-at="2023-07-05T18:10:52 IST" description="verifying and validating floor percentage search page" data-provider="PSQFloorPercentageData" finished-at="2023-07-05T18:11:17 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{role=Valuator, is_active=1, year=2023, storename=TS Madision, hrms_id=110, password=Pass@123, month=Jul, grade=A, segment=Gold, company=CKCCO-C. Krishniah Chetty & Co. Private Limited , editfloorpercentagevalue=75, region=Bangalore, floorpercentage=50}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchFloorPercentage -->
+        <test-method status="PASS" signature="closeWebApplication()[pri:0, instance:com.dcpl.testcase.PSQFloorPercentageTest@133e16fd]" name="closeWebApplication" is-config="true" duration-ms="1446" started-at="2023-07-05T18:11:17 IST" finished-at="2023-07-05T18:11:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWebApplication -->
+        <test-method status="PASS" signature="setUP(java.lang.String)[pri:0, instance:com.dcpl.testcase.PSQFloorPercentageTest@133e16fd]" name="setUP" is-config="true" duration-ms="4693" started-at="2023-07-05T18:11:18 IST" finished-at="2023-07-05T18:11:23 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method status="PASS" signature="deleteFloorPercentage(java.util.HashMap)[pri:3, instance:com.dcpl.testcase.PSQFloorPercentageTest@133e16fd]" name="deleteFloorPercentage" duration-ms="25061" started-at="2023-07-05T18:11:23 IST" description="verifying and validating floor percentage delete" data-provider="PSQFloorPercentageData" finished-at="2023-07-05T18:11:48 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{role=Valuator, is_active=1, year=2023, storename=TS Madision, hrms_id=110, password=Pass@123, month=Jul, grade=A, segment=Gold, company=CKCCO-C. Krishniah Chetty & Co. Private Limited , editfloorpercentagevalue=75, region=Bangalore, floorpercentage=50}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteFloorPercentage -->
+        <test-method status="PASS" signature="closeWebApplication()[pri:0, instance:com.dcpl.testcase.PSQFloorPercentageTest@133e16fd]" name="closeWebApplication" is-config="true" duration-ms="1524" started-at="2023-07-05T18:11:48 IST" finished-at="2023-07-05T18:11:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWebApplication -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.dcpl.testcase.PSQFloorPercentageTest@133e16fd]" name="afterSuite" is-config="true" duration-ms="1101" started-at="2023-07-05T18:11:50 IST" finished-at="2023-07-05T18:11:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.dcpl.testcase.PSQFloorPercentageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

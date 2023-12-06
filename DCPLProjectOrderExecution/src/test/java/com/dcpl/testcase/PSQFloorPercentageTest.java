@@ -184,6 +184,7 @@ public class PSQFloorPercentageTest extends BaseClass{
 		String actSuccMsg=floorPercentageSearch.deleteFloorPercentage();
 		
 		Assert.assertEquals(expSuccMsg, actSuccMsg);
+		
 	}
 	@AfterMethod(groups = {"Smoke","Sanity","Regression"})
 	public void closeWebApplication() throws InterruptedException {

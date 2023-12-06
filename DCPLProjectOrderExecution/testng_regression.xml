@@ -28,17 +28,32 @@
 					<exclude name="verifyReleaseOrderPageInputFields"></exclude>
 					<exclude name="verifyReleaseOrderByOrderNo"></exclude>
 				</methods>
-			</class>-->
+			</class>
 		
 	
 			<class name="com.dcpl.testcase.PSQFloorPercentageTest">
 			<methods>
 			<include name="createFloorPercentage"></include>
-			<include name="searchFloorPercentage"></include>
+			<exclude name="searchFloorPercentage"></exclude>
 			<exclude name="editFloorPercentage"></exclude>
-			<include name="deleteFloorPercentage"></include>
+			<exclude name="deleteFloorPercentage"></exclude>
 			</methods>
 			</class>
+			<class name="com.dcpl.testcase.PSQTargetTest">
+			<methods>
+			<include name="createPSQTarget"></include>
+			</methods>
+			
+			</class>-->
+			
+			<class name="com.dcpl.testcase.PSQCreateAttendanceTest">
+			<methods>
+			<exclude name="createPSQAttendance"></exclude>
+			<include name="downloadPSQAttendanceTemplate"></include>
+			</methods>
+			
+			</class>
+			
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

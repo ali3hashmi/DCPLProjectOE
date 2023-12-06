@@ -3,20 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.dcpl.testcase.ReleaseOrderPageTest">
+      <class name="com.dcpl.testcase.PSQTargetTest">
         <methods>
-          <include name="verifyReleaseOrderByOrderNo"/>
-          <include name="verifyReleaseOrderByOrderType"/>
+          <include name="createPSQTarget"/>
           <include name="afterSuite"/>
-          <include name="verifyReleaseOrderBySegment"/>
           <include name="readConfig"/>
-          <include name="verifyReleaseOrderByStoreCode"/>
-          <include name="closeWebApplication"/>
           <include name="setUP"/>
-          <include name="verifyReleaseOrderByOrderKind"/>
-          <include name="verifyReleaseOrderByVendor"/>
+          <include name="closeWebApplication"/>
         </methods>
-      </class> <!-- com.dcpl.testcase.ReleaseOrderPageTest -->
+      </class> <!-- com.dcpl.testcase.PSQTargetTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

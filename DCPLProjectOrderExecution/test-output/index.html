@@ -124,12 +124,12 @@
                       <br/>
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.dcpl.testcase.PSQCreateAttendanceTest" class="method navigator-link" hash-for-method="downloadPSQAttendanceTemplate({dcname=1, password=Pass@123, role=ADMIN, month=Jun, noofdayspresent=25, name=190, storename=TS Madi...)">downloadPSQAttendanceTemplate({dcname=1, password=Pass@123, role=ADMIN, month=Jun, noofdayspresent=25, name=190, storename=TS Madi...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.dcpl.testcase.PSQCreateAttendanceTest" class="method navigator-link" hash-for-method="downloadPSQAttendanceTemplate({dcname=, password=, role=, month=, noofdayspresent=, name=, storename=, company=, hrms_id=, region=...)">downloadPSQAttendanceTemplate({dcname=, password=, role=, month=, noofdayspresent=, name=, storename=, company=, hrms_id=, region=...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.dcpl.testcase.PSQCreateAttendanceTest" class="method navigator-link" hash-for-method="downloadPSQAttendanceTemplate({dcname=, password=, role=, month=, noofdayspresent=, name=, storename=, company=, hrms_id=, region=...)">downloadPSQAttendanceTemplate({dcname=, password=, role=, month=, noofdayspresent=, name=, storename=, company=, hrms_id=, region=...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.dcpl.testcase.PSQCreateAttendanceTest" class="method navigator-link" hash-for-method="downloadPSQAttendanceTemplate({dcname=1, password=Pass@123, role=ADMIN, month=Jun, noofdayspresent=25, name=190, storename=TS Madi...)">downloadPSQAttendanceTemplate({dcname=1, password=Pass@123, role=ADMIN, month=Jun, noofdayspresent=25, name=190, storename=TS Madi...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-Suite -->
@@ -150,6 +150,40 @@
               <span class="class-name">com.dcpl.testcase.PSQCreateAttendanceTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="downloadPSQAttendanceTemplate({dcname=, password=, role=, month=, noofdayspresent=, name=, storename=, company=, hrms_id=, region=...)">
+                  </a> <!-- downloadPSQAttendanceTemplate({dcname=, password=, role=, month=, noofdayspresent=, name=, storename=, company=, hrms_id=, region=...) -->
+                  <span class="method-name">downloadPSQAttendanceTemplate</span>
+                  <span class="parameters">({dcname=, password=, role=, month=, noofdayspresent=, name=, storename=, company=, hrms_id=, region=, years=})</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 120.0.6099.63 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: &apos;HP&apos;, ip: &apos;192.168.0.123&apos;
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:148)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:106)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:101)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:82)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:71)
+	at com.dcpl.base.BaseClass.LaunchApp(BaseClass.java:87)
+	at com.dcpl.testcase.PSQCreateAttendanceTest.setUP(PSQCreateAttendanceTest.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(verifying and validating psq download attendance template)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="downloadPSQAttendanceTemplate({dcname=, password=, role=, month=, noofdayspresent=, name=, storename=, company=, hrms_id=, region=...)">
@@ -320,40 +354,6 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goo
 (verifying and validating psq download attendance template)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="downloadPSQAttendanceTemplate({dcname=, password=, role=, month=, noofdayspresent=, name=, storename=, company=, hrms_id=, region=...)">
-                  </a> <!-- downloadPSQAttendanceTemplate({dcname=, password=, role=, month=, noofdayspresent=, name=, storename=, company=, hrms_id=, region=...) -->
-                  <span class="method-name">downloadPSQAttendanceTemplate</span>
-                  <span class="parameters">({dcname=, password=, role=, month=, noofdayspresent=, name=, storename=, company=, hrms_id=, region=, years=})</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 120.0.6099.63 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: &apos;HP&apos;, ip: &apos;192.168.0.123&apos;
-Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}}]
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:148)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:106)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:229)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
-	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:101)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:82)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:71)
-	at com.dcpl.base.BaseClass.LaunchApp(BaseClass.java:87)
-	at com.dcpl.testcase.PSQCreateAttendanceTest.setUP(PSQCreateAttendanceTest.java:35)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(verifying and validating psq download attendance template)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-skipped -->
         </div> <!-- panel Suite -->
@@ -443,11 +443,11 @@ data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'downloadPSQAttendanceTemplate')
 data.setCell(0, 2, 'com.dcpl.testcase.PSQCreateAttendanceTest')
-data.setCell(0, 3, 1);
+data.setCell(0, 3, 0);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'downloadPSQAttendanceTemplate')
 data.setCell(1, 2, 'com.dcpl.testcase.PSQCreateAttendanceTest')
-data.setCell(1, 3, 1);
+data.setCell(1, 3, 0);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'downloadPSQAttendanceTemplate')
 data.setCell(2, 2, 'com.dcpl.testcase.PSQCreateAttendanceTest')
@@ -468,7 +468,7 @@ window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 ms</span>
+              <span class="suite-total-time">Total running time: 0 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -512,79 +512,79 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">setUP(chrome)</span>
-                <span class="method-start">4924 ms</span>
+                <span class="method-start">6029 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">downloadPSQAttendanceTemplate({dcname=1, password=Pass@123, role=ADMIN, month=Jun, noofdayspresent=25, name=190, storename=TS Madi...)</span>
-                <span class="method-start">18066 ms</span>
+                <span class="method-start">19351 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeWebApplication</span>
-                <span class="method-start">18126 ms</span>
+                <span class="method-start">19378 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUP</span>
-                <span class="method-start">18131 ms</span>
+                <span class="method-start">19381 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">downloadPSQAttendanceTemplate({dcname=, password=, role=, month=, noofdayspresent=, name=, storename=, company=, hrms_id=, region=...)</span>
-                <span class="method-start">18138 ms</span>
+                <span class="method-start">19383 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeWebApplication</span>
-                <span class="method-start">18162 ms</span>
+                <span class="method-start">19392 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUP</span>
-                <span class="method-start">18166 ms</span>
+                <span class="method-start">19396 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">downloadPSQAttendanceTemplate({dcname=, password=, role=, month=, noofdayspresent=, name=, storename=, company=, hrms_id=, region=...)</span>
-                <span class="method-start">18171 ms</span>
+                <span class="method-start">19400 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeWebApplication</span>
-                <span class="method-start">18197 ms</span>
+                <span class="method-start">19408 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUP</span>
-                <span class="method-start">18210 ms</span>
+                <span class="method-start">19414 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">downloadPSQAttendanceTemplate({dcname=, password=, role=, month=, noofdayspresent=, name=, storename=, company=, hrms_id=, region=...)</span>
-                <span class="method-start">18214 ms</span>
+                <span class="method-start">19418 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeWebApplication</span>
-                <span class="method-start">18267 ms</span>
+                <span class="method-start">19463 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUP</span>
-                <span class="method-start">18309 ms</span>
+                <span class="method-start">19465 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">downloadPSQAttendanceTemplate({dcname=, password=, role=, month=, noofdayspresent=, name=, storename=, company=, hrms_id=, region=...)</span>
-                <span class="method-start">18315 ms</span>
+                <span class="method-start">19467 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeWebApplication</span>
-                <span class="method-start">18333 ms</span>
+                <span class="method-start">19489 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUP</span>
-                <span class="method-start">18340 ms</span>
+                <span class="method-start">19494 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">downloadPSQAttendanceTemplate({dcname=, password=, role=, month=, noofdayspresent=, name=, storename=, company=, hrms_id=, region=...)</span>
-                <span class="method-start">18354 ms</span>
+                <span class="method-start">19497 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeWebApplication</span>
-                <span class="method-start">18381 ms</span>
+                <span class="method-start">19503 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">18517 ms</span>
+                <span class="method-start">19609 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

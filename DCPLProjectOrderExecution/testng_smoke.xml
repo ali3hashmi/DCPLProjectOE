@@ -10,6 +10,7 @@
   <parameter name="browser" value="chrome"></parameter>
   <classes>
   <class name="com.dcpl.testcase.OELoginPageTest"></class>
+  <class name="com.dcpl.testcase.OELoginPageTest"></class>
   </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

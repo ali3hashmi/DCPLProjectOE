@@ -159,5 +159,34 @@ public class OrderExecutionDataProvider {
 		}
 		return data;
 	}
+	
+	//Class -> 
+	//TestCases -> 
+	@DataProvider(name = "createReceiveParcel")
+	public Object[][] getCreateReceiveParcelData() {
+
+		//total row count
+		int rows=obj.getRowCount("Receive Parcel");
+
+		//total column
+		int column =obj.getColumnCount("Receive Parcel");
+
+		int actRows=rows-1;
+
+		//Created an object of array to store data
+		Object[][] data =new Object[actRows][1];
+
+		for(int i=0;i<actRows;i++) {
+
+			Map<String, String> hashMap=new HashMap<>();
+			for(int j=0;j<column;j++) {
+
+				hashMap.put(obj.getCellData("Receive Parcel", j, 1),
+						obj.getCellData("Receive Parcel", j, i+2));
+			}
+			data[i][0]=hashMap;
+		}
+		return data;
+	}
 
 }

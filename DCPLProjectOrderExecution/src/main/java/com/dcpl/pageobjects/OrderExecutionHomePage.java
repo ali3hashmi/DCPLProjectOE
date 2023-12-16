@@ -40,7 +40,18 @@ public class OrderExecutionHomePage extends Action{
 	
 	@FindBy(partialLinkText = "Attendance For P")
 	private WebElement createAttendancePSQ;
-
+	
+	@FindBy(xpath = "//a[normalize-space()='Parcel']")
+	private WebElement parcelMainMenu;
+	
+	@FindBy(linkText = "Receive Parcel")
+	private WebElement receiveParcel;
+	
+	@FindBy(xpath = "//a[normalize-space()='Voucher']")
+	private WebElement voucherMainMenu;
+	
+	@FindBy(linkText = "Goods Receipt Voucher")
+	private WebElement GRV;
 
 
 	public String getOEHomeText() {
@@ -85,5 +96,14 @@ public class OrderExecutionHomePage extends Action{
 		
 		return new PSQSearchAttendance();
 	}
+	
+	public ReceiveParcelPage ReceiveParcel(ReceiveParcelPage receiveParcelPage) {
+		
+		super.click(getDriver(), parcelMainMenu);
+		super.click(getDriver(), receiveParcel);
+		super.pageLoadTimeOut(getDriver(), 15);
+		return new ReceiveParcelPage();
+	}
 
+	
 }

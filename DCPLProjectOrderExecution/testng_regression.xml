@@ -15,13 +15,13 @@
 			</run>
 		</groups>
 		<classes>
-			<!--  <class name="com.dcpl.testcase.OELoginPageTest">
+			 <class name="com.dcpl.testcase.OELoginPageTest">
 				<methods>
-					<exclude name="OELoginTest"></exclude>
+					<include name="OELoginTest"></include>
 				</methods>
 			</class>
 		
-		
+		<!-- 
 			<class name="com.dcpl.testcase.ReleaseOrderPageTest">
 				<methods>
 					<exclude name="verifyReleaseOrderByStoreCode"></exclude>
@@ -44,7 +44,7 @@
 			<include name="createPSQTarget"></include>
 			</methods>
 			
-			</class>-->
+			</class>
 			
 			<class name="com.dcpl.testcase.PSQCreateAttendanceTest">
 			<methods>
@@ -52,7 +52,7 @@
 			<include name="downloadPSQAttendanceTemplate"></include>
 			</methods>
 			
-			</class>
+			</class>-->
 			
 		</classes>
 	</test> <!-- Test -->

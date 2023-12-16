@@ -45,8 +45,8 @@ public class OELoginPageTest extends BaseClass{
 		//System.out.println(actualSalesHomePageText);
 		String expectedOEHomePageText ="Home - Order Execution";
 		Assert.assertEquals(actualOEHomePageText, expectedOEHomePageText);
-		Log.info("Sales Login Success");
-		Log.endTestCase("Sales Login Test");
+		Log.info("OE Login Success");
+		Log.endTestCase("OE Login Test");
 	}
 	@AfterMethod(groups = {"Smoke","Sanity","Regression"})
 	public void closeWebApplication() throws InterruptedException {

@@ -37,19 +37,19 @@ public class OrderExecutionHomePage extends Action{
 
 	@FindBy(xpath = "//a[contains(text(),'Create Target')]")
 	private WebElement createTargetMenu;
-	
+
 	@FindBy(partialLinkText = "Attendance For P")
 	private WebElement createAttendancePSQ;
-	
+
 	@FindBy(xpath = "//a[normalize-space()='Parcel']")
 	private WebElement parcelMainMenu;
-	
+
 	@FindBy(linkText = "Receive Parcel")
 	private WebElement receiveParcel;
-	
+
 	@FindBy(xpath = "//a[normalize-space()='Voucher']")
 	private WebElement voucherMainMenu;
-	
+
 	@FindBy(linkText = "Goods Receipt Voucher")
 	private WebElement GRV;
 
@@ -83,27 +83,38 @@ public class OrderExecutionHomePage extends Action{
 		super.click(getDriver(), psqMainMenu);
 		super.click(getDriver(), psqSubMenu);		
 		super.click(getDriver(), createTargetMenu);
-		
+
 
 		return new PSQSearchTarget();
 	}
-	
+
 	public PSQSearchAttendance psqCreateAttendance(PSQSearchAttendance psqSearchAttendance) {
-		
+
 		super.click(getDriver(), psqMainMenu);
 		super.click(getDriver(), psqSubMenu);	
 		super.click(getDriver(), createAttendancePSQ);
-		
+
 		return new PSQSearchAttendance();
 	}
-	
+
+
 	public ReceiveParcelPage ReceiveParcel(ReceiveParcelPage receiveParcelPage) {
-		
+
 		super.click(getDriver(), parcelMainMenu);
 		super.click(getDriver(), receiveParcel);
 		super.pageLoadTimeOut(getDriver(), 15);
 		return new ReceiveParcelPage();
 	}
 
-	
+	public GoodsReceiptVoucherPage createGRV(GoodsReceiptVoucherPage goodsReceiptVoucherPage) {
+		
+		super.click(getDriver(), voucherMainMenu);
+		super.click(getDriver(), GRV);
+		
+		return new GoodsReceiptVoucherPage();
+
+
+	}
+
+
 }

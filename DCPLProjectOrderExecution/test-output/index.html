@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-skipped">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,  1 skipped,  1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.dcpl.testcase.GoodsReceiptVocuherTest" class="method navigator-link" hash-for-method="createGRVForSubContractVendorRefTypeFinishedGoodSegmentPlatinum({grvdate=, regunreg=UnRegistered, partybillno=987456, igstPerc=0, netwt=100, igstamount=200.0, hrms_...)">createGRVForSubContractVendorRefTypeFinishedGoodSegmentPlatinum({grvdate=, regunreg=UnRegistered, partybillno=987456, igstPerc=0, netwt=100, igstamount=200.0, hrms_...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +118,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.dcpl.testcase.ReceiveParcelTest" class="method navigator-link" hash-for-method="createReceiveParcel({receivedby=, noofboxes=1, deliverymode=P, hrms_id=110, courieragencyname=ABC, sentby=test, password...)">createReceiveParcel({receivedby=, noofboxes=1, deliverymode=P, hrms_id=110, courieragencyname=ABC, sentby=test, password...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.dcpl.testcase.GoodsReceiptVocuherTest" class="method navigator-link" hash-for-method="createGRVForSubContractVendorRefTypeFinishedGoodSegmentPlatinum({grvdate=, regunreg=UnRegistered, partybillno=987456, igstPerc=0, netwt=100, igstamount=200.0, hrms_...)">createGRVForSubContractVendorRefTypeFinishedGoodSegmentPlatinum({grvdate=, regunreg=UnRegistered, partybillno=987456, igstPerc=0, netwt=100, igstamount=200.0, hrms_...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -119,20 +133,43 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.dcpl.testcase.ReceiveParcelTest</span>
+              <img src="skipped.png"/>
+              <span class="class-name">com.dcpl.testcase.GoodsReceiptVocuherTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="createReceiveParcel({receivedby=, noofboxes=1, deliverymode=P, hrms_id=110, courieragencyname=ABC, sentby=test, password...)">
-                  </a> <!-- createReceiveParcel({receivedby=, noofboxes=1, deliverymode=P, hrms_id=110, courieragencyname=ABC, sentby=test, password...) -->
-                  <span class="method-name">createReceiveParcel</span>
-                  <span class="parameters">({receivedby=, noofboxes=1, deliverymode=P, hrms_id=110, courieragencyname=ABC, sentby=test, password=Pass@123, materialtype=G, borneby=CO, vendor=BKK, insuredamount=25000, couriercharges=1500, grosswt=25, courierreceiptnumber=12345})</span>
+                  <a name="createGRVForSubContractVendorRefTypeFinishedGoodSegmentPlatinum({grvdate=, regunreg=UnRegistered, partybillno=987456, igstPerc=0, netwt=100, igstamount=200.0, hrms_...)">
+                  </a> <!-- createGRVForSubContractVendorRefTypeFinishedGoodSegmentPlatinum({grvdate=, regunreg=UnRegistered, partybillno=987456, igstPerc=0, netwt=100, igstamount=200.0, hrms_...) -->
+                  <span class="method-name">createGRVForSubContractVendorRefTypeFinishedGoodSegmentPlatinum</span>
+                  <span class="parameters">({grvdate=, regunreg=UnRegistered, partybillno=987456, igstPerc=0, netwt=100, igstamount=200.0, hrms_id=110, grvno=, parcelid=2181, invoiceamount=5000.0, segments=Gold, password=Pass@123, diamondwt=10, skinpurityG=92, materialtype=F, wast.wt=1.5, vendor=BKK, partybillDay=20, sourcestate=Karnataka, gstinno=07BKKCH1747D1ZY, grosswt=100, metalrate=4250, pcs=1, cessPerc=0, partybillMonthYear=January 2024, cessamount=50.0, valueinrs=35000, sgstPerc=2, hsnsaccode=71131910, sgstamount=100.0, cgstPerc=2, grvtype=S, labourcharge=2500, cgstamount=100.0, remarks=test})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Success] but found [Error]
+	at com.dcpl.testcase.GoodsReceiptVocuherTest.createGRVForSubContractVendorRefTypeFinishedGoodSegmentPlatinum(GoodsReceiptVocuherTest.java:210)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
                   <em>
-(Verifying create receive parcel process)                  </em>
+(Verifying create grv process)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.dcpl.testcase.GoodsReceiptVocuherTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createGRVForSubContractVendorRefTypeFinishedGoodSegmentPlatinum({grvdate=, regunreg=UnRegistered, partybillno=987456, igstPerc=0, netwt=100, igstamount=200.0, hrms_...)">
+                  </a> <!-- createGRVForSubContractVendorRefTypeFinishedGoodSegmentPlatinum({grvdate=, regunreg=UnRegistered, partybillno=987456, igstPerc=0, netwt=100, igstamount=200.0, hrms_...) -->
+                  <span class="method-name">createGRVForSubContractVendorRefTypeFinishedGoodSegmentPlatinum</span>
+                  <span class="parameters">({grvdate=, regunreg=UnRegistered, partybillno=987456, igstPerc=0, netwt=100, igstamount=200.0, hrms_id=110, grvno=, parcelid=2181, invoiceamount=5000.0, segments=Gold, password=Pass@123, diamondwt=10, skinpurityG=92, materialtype=F, wast.wt=1.5, vendor=BKK, partybillDay=20, sourcestate=Karnataka, gstinno=07BKKCH1747D1ZY, grosswt=100, metalrate=4250, pcs=1, cessPerc=0, partybillMonthYear=January 2024, cessamount=50.0, valueinrs=35000, sgstPerc=2, hsnsaccode=71131910, sgstamount=100.0, cgstPerc=2, grvtype=S, labourcharge=2500, cgstamount=100.0, remarks=test})</span>
+                  <em>
+(Verifying create grv process)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -159,11 +196,22 @@
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.dcpl.testcase.ReceiveParcelTest&quot;&gt;
+      &lt;class name=&quot;com.dcpl.testcase.GoodsReceiptVocuherTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;createReceiveParcel&quot;/&gt;
+          &lt;include name=&quot;createGRVForSubContractVendorRefTypeFinishedGoodSegmentPlatinum&quot;/&gt;
+          &lt;exclude name=&quot;createGRVForSubContractVendorRefTypeFinishedGoodSegmentGold&quot;/&gt;
+          &lt;exclude name=&quot;createGRVForSubContractVendorRefTypeFinishedGoodSegmentSilver&quot;/&gt;
+          &lt;exclude name=&quot;createGRVForSubContractVendorRefTypeFinishedGoodSegmentDiamond&quot;/&gt;
+          &lt;exclude name=&quot;createGRVForDealerVendorRefTypeFinishedGoodSegmentGold&quot;/&gt;
+          &lt;exclude name=&quot;createGRVForDealerVendorRefTypeFinishedGoodSegmentSilver&quot;/&gt;
+          &lt;exclude name=&quot;createGRVForDealerVendorRefTypeFinishedGoodSegmentPlatinum&quot;/&gt;
+          &lt;exclude name=&quot;createGRVForDealertVendorRefTypeFinishedGoodSegmentDiamond&quot;/&gt;
+          &lt;exclude name=&quot;createGRVForConsignmentVendorRefTypeFinishedGoodSegmentGold&quot;/&gt;
+          &lt;exclude name=&quot;createGRVForConsignmentVendorRefTypeFinishedGoodSegmentSilver&quot;/&gt;
+          &lt;exclude name=&quot;createGRVForConsignmentVendorRefTypeFinishedGoodSegmentPlatinum&quot;/&gt;
+          &lt;exclude name=&quot;createGRVForConsignmentVendorRefTypeFinishedGoodSegmentDiamond&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.dcpl.testcase.ReceiveParcelTest --&gt;
+      &lt;/class&gt; &lt;!-- com.dcpl.testcase.GoodsReceiptVocuherTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -191,7 +239,7 @@
               <span class="test-group-name">Regression</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">createReceiveParcel</span>
+                <span class="method-in-group-name">createGRVForSubContractVendorRefTypeFinishedGoodSegmentPlatinum</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -199,7 +247,7 @@
               <span class="test-group-name">Sanity</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">createReceiveParcel</span>
+                <span class="method-in-group-name">createGRVForSubContractVendorRefTypeFinishedGoodSegmentPlatinum</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -219,16 +267,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'createReceiveParcel')
-data.setCell(0, 2, 'com.dcpl.testcase.ReceiveParcelTest')
-data.setCell(0, 3, 15124);
+data.setCell(0, 1, 'createGRVForSubContractVendorRefTypeFinishedGoodSegmentPlatinum')
+data.setCell(0, 2, 'com.dcpl.testcase.GoodsReceiptVocuherTest')
+data.setCell(0, 3, 21266);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'createGRVForSubContractVendorRefTypeFinishedGoodSegmentPlatinum')
+data.setCell(1, 2, 'com.dcpl.testcase.GoodsReceiptVocuherTest')
+data.setCell(1, 3, 20071);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <span class="suite-total-time">Total running time: 41 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -243,9 +295,36 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">11 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.dcpl.testcase.GoodsReceiptVocuherTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">createGRVForSubContractVendorRefTypeFinishedGoodSegmentDiamond</span>
+                <br/>
+                <span class="ignored-method-name">createGRVForConsignmentVendorRefTypeFinishedGoodSegmentSilver</span>
+                <br/>
+                <span class="ignored-method-name">createGRVForConsignmentVendorRefTypeFinishedGoodSegmentDiamond</span>
+                <br/>
+                <span class="ignored-method-name">createGRVForDealerVendorRefTypeFinishedGoodSegmentGold</span>
+                <br/>
+                <span class="ignored-method-name">createGRVForDealertVendorRefTypeFinishedGoodSegmentDiamond</span>
+                <br/>
+                <span class="ignored-method-name">createGRVForConsignmentVendorRefTypeFinishedGoodSegmentPlatinum</span>
+                <br/>
+                <span class="ignored-method-name">createGRVForDealerVendorRefTypeFinishedGoodSegmentSilver</span>
+                <br/>
+                <span class="ignored-method-name">createGRVForSubContractVendorRefTypeFinishedGoodSegmentSilver</span>
+                <br/>
+                <span class="ignored-method-name">createGRVForConsignmentVendorRefTypeFinishedGoodSegmentGold</span>
+                <br/>
+                <span class="ignored-method-name">createGRVForSubContractVendorRefTypeFinishedGoodSegmentGold</span>
+                <br/>
+                <span class="ignored-method-name">createGRVForDealerVendorRefTypeFinishedGoodSegmentPlatinum</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -254,26 +333,38 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.dcpl.testcase.ReceiveParcelTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.dcpl.testcase.GoodsReceiptVocuherTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">readConfig</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">setUP(chrome)</span>
-                <span class="method-start">3352 ms</span>
+                <span class="method-start">1700 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">createReceiveParcel({receivedby=, noofboxes=1, deliverymode=P, hrms_id=110, courieragencyname=ABC, sentby=test, password...)</span>
-                <span class="method-start">8293 ms</span>
+                <span class="method-name">createGRVForSubContractVendorRefTypeFinishedGoodSegmentPlatinum({grvdate=, regunreg=UnRegistered, partybillno=987456, igstPerc=0, netwt=100, igstamount=200.0, hrms_...)</span>
+                <span class="method-start">8978 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeWebApplication</span>
-                <span class="method-start">23432 ms</span>
+                <span class="method-start">30267 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUP(chrome)</span>
+                <span class="method-start">31197 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createGRVForSubContractVendorRefTypeFinishedGoodSegmentPlatinum({grvdate=, regunreg=UnRegistered, partybillno=987456, igstPerc=0, netwt=100, igstamount=200.0, hrms_...)</span>
+                <span class="method-start">33423 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeWebApplication</span>
+                <span class="method-start">53495 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">24401 ms</span>
+                <span class="method-start">54374 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

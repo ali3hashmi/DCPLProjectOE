@@ -188,5 +188,34 @@ public class OrderExecutionDataProvider {
 		}
 		return data;
 	}
+	
+	//Class -> 
+		//TestCases -> 
+		@DataProvider(name = "GoodReceiptVoucher")
+		public Object[][] getGoodsReceiptVoucherData() {
+
+			//total row count
+			int rows=obj.getRowCount("GRV");
+
+			//total column
+			int column =obj.getColumnCount("GRV");
+
+			int actRows=rows-1;
+
+			//Created an object of array to store data
+			Object[][] data =new Object[actRows][1];
+
+			for(int i=0;i<actRows;i++) {
+
+				Map<String, String> hashMap=new HashMap<>();
+				for(int j=0;j<column;j++) {
+
+					hashMap.put(obj.getCellData("GRV", j, 1),
+							obj.getCellData("GRV", j, i+2));
+				}
+				data[i][0]=hashMap;
+			}
+			return data;
+		}
 
 }

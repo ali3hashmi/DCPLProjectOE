@@ -13,15 +13,15 @@
       </run>
     </groups>
     <classes>
-      <class name="com.dcpl.testcase.ReceiveParcelTest">
+      <class name="com.dcpl.testcase.GoodsReceiptVocuherTest">
         <methods>
-          <include name="createReceiveParcel" invocation-numbers="0 0 0"/>
-          <include name="afterSuite"/>
           <include name="setUP"/>
-          <include name="readConfig"/>
+          <include name="createGRVForSubContractVendorRefTypeFinishedGoodSegmentPlatinum" invocation-numbers="0"/>
+          <include name="afterSuite"/>
           <include name="closeWebApplication"/>
+          <include name="readConfig"/>
         </methods>
-      </class> <!-- com.dcpl.testcase.ReceiveParcelTest -->
+      </class> <!-- com.dcpl.testcase.GoodsReceiptVocuherTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

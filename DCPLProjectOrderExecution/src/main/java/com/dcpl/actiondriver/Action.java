@@ -33,24 +33,24 @@ import com.dcpl.base.BaseClass;
  */
 public class Action extends BaseClass implements ActionInterface {
 
-	
-	 
-	
+
+
+
 	@Override
 	public void scrollByVisibilityOfElement(WebDriver driver, WebElement ele) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView();", ele);
 
 	}
-	
+
 	@Override
-		public void scrollDown(WebDriver driver, WebElement ele) {
-			// TODO Auto-generated method stub
+	public void scrollDown(WebDriver driver, WebElement ele) {
+		// TODO Auto-generated method stub
 		JavascriptExecutor js=(JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,250)", "");
-			
-		}
-	
+
+	}
+
 	@Override
 	public void scrollUP(WebDriver driver, WebElement ele) {
 		// TODO Auto-generated method stub
@@ -353,9 +353,9 @@ public class Action extends BaseClass implements ActionInterface {
 			}
 		}
 	}
-	
-	
-	
+
+
+
 
 	/**
 	 * This method switch the to frame using frame ID.
@@ -490,9 +490,9 @@ public class Action extends BaseClass implements ActionInterface {
 			return true;
 
 		} catch (Exception e) {
-		
+
 			return false;
-			
+
 		} finally {
 			if (flag) {
 				System.out.println("Draggable Action is performed on \""+source+"\"");			
@@ -519,7 +519,7 @@ public class Action extends BaseClass implements ActionInterface {
 			}
 		}
 	}
-	
+
 	@Override
 	public  boolean slider(WebDriver driver,WebElement ele, int x, int y) {
 		boolean flag = false;
@@ -541,7 +541,7 @@ public class Action extends BaseClass implements ActionInterface {
 			}
 		}
 	}
-	
+
 	@Override
 	public  boolean rightclick(WebDriver driver,WebElement ele) {
 		boolean flag = false;
@@ -562,7 +562,7 @@ public class Action extends BaseClass implements ActionInterface {
 			}
 		}
 	}
-	
+
 	@Override
 	public  boolean switchWindowByTitle(WebDriver driver,String windowTitle, int count) {
 		boolean flag = false;
@@ -643,15 +643,15 @@ public class Action extends BaseClass implements ActionInterface {
 		}
 		return a;
 	}
-	
+
 	@Override
 	public  int getRowCount(WebElement table) {
 		List<WebElement> rows = table.findElements(By.tagName("tr"));
 		int a = rows.size() - 1;
 		return a;
 	}
-	
-	
+
+
 	/**
 	 * Verify alert present or not
 	 * 
@@ -701,7 +701,7 @@ public class Action extends BaseClass implements ActionInterface {
 			}
 		}
 	}
-	
+
 	@Override
 	public  boolean isAlertPresent(WebDriver driver) 
 	{ 
@@ -715,7 +715,7 @@ public class Action extends BaseClass implements ActionInterface {
 			return false; 
 		}   // catch 
 	}
-	
+
 	@Override
 	public  String getTitle(WebDriver driver) {
 		boolean flag = false;
@@ -726,7 +726,7 @@ public class Action extends BaseClass implements ActionInterface {
 		}
 		return text;
 	}
-	
+
 	@Override
 	public  String getCurrentURL(WebDriver driver)  {
 		boolean flag = false;
@@ -737,7 +737,7 @@ public class Action extends BaseClass implements ActionInterface {
 		}
 		return text;
 	}
-	
+
 	@Override
 	public  boolean click1(WebElement locator, String locatorName) {
 		boolean flag = false;
@@ -756,19 +756,19 @@ public class Action extends BaseClass implements ActionInterface {
 		}
 
 	}
-	
+
 	@Override
 	public  void fluentWait(WebDriver driver,WebElement element, int timeOut) {
-	    Wait<WebDriver> wait = null;
-	    try {
-	        wait = new FluentWait<WebDriver>((WebDriver) driver)
-	        		.withTimeout(Duration.ofSeconds(20))
-	        	    .pollingEvery(Duration.ofSeconds(2))
-	        	    .ignoring(Exception.class);
-	        wait.until(ExpectedConditions.visibilityOf(element));
-	        element.click();
-	    }catch(Exception e) {
-	    }
+		Wait<WebDriver> wait = null;
+		try {
+			wait = new FluentWait<WebDriver>((WebDriver) driver)
+					.withTimeout(Duration.ofSeconds(20))
+					.pollingEvery(Duration.ofSeconds(2))
+					.ignoring(Exception.class);
+			wait.until(ExpectedConditions.visibilityOf(element));
+			element.click();
+		}catch(Exception e) {
+		}
 	}
 	@Override
 	public  void implicitWait(WebDriver driver, int timeOut) {
@@ -799,7 +799,7 @@ public class Action extends BaseClass implements ActionInterface {
 		/*String newImageString = "http://localhost:8082/job/MyStoreProject/ws/MyStoreProject/ScreenShots/" + filename + "_"
 				+ dateName + ".png";
 		return newImageString;
-		*/
+		 */
 		return destination;
 	}
 	@Override
@@ -808,23 +808,23 @@ public class Action extends BaseClass implements ActionInterface {
 		return currentDate;
 	}
 
-	
-	
+
+
 	/*@Override
 	public boolean selectDate(WebDriver driver, WebElement ele) {
 		// TODO Auto-generated method stub
 		boolean flag=false;
-		
+
 		Select s =new Select(ele);
 		for(WebElement element:s) {
-			
+
 			String date =element.getText();
 			if(date.equals(ele)) {
-				
+
 				ele.click();
 				break;
 			}
-			
+
 		}
 		return false;
 	}*/

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Suite]]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.dcpl.utility.ListenerClass"/>
+    <listener class-name="com.dcpl.failedtestcases.RetryListenerClass"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)(failed)">
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="Sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.dcpl.testcase.GoodsReceiptVocuherTest">
+        <methods>
+          <include name="createGRVForConsignmentVendorRefTypeFinishedGoodSegmentSilver" invocation-numbers="0 0 0"/>
+          <include name="createGRVForDealerVendorRefTypeFinishedGoodSegmentGold" invocation-numbers="0"/>
+          <include name="setUP"/>
+          <include name="createGRVForSubContractVendorRefTypeFinishedGoodSegmentPlatinum" invocation-numbers="0 0 0"/>
+          <include name="createGRVForConsignmentVendorRefTypeFinishedGoodSegmentPlatinum" invocation-numbers="0 0 0"/>
+          <include name="afterSuite"/>
+          <include name="closeWebApplication"/>
+          <include name="createGRVForDealerVendorRefTypeFinishedGoodSegmentSilver" invocation-numbers="0 0 0"/>
+          <include name="readConfig"/>
+          <include name="createGRVForConsignmentVendorRefTypeFinishedGoodSegmentGold" invocation-numbers="0 0 0"/>
+          <include name="createGRVForSubContractVendorRefTypeFinishedGoodSegmentSilver" invocation-numbers="0 0 0"/>
+          <include name="createGRVForDealerVendorRefTypeFinishedGoodSegmentPlatinum" invocation-numbers="0 0 0"/>
+        </methods>
+      </class> <!-- com.dcpl.testcase.GoodsReceiptVocuherTest -->
+    </classes>
+  </test> <!-- Test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->

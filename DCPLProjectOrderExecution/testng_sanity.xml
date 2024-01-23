@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="com.dcpl.utility.ListenerClass">
+			<listener
+				class-name="com.dcpl.failedtestcases.RetryListenerClass"></listener>
+		</listener>
+	</listeners>
+	<test thread-count="5" name="Test">
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Sanity"></include>
+			</run>					
+		</groups>
+		<classes>
+			<!-- <class name="com.dcpl.testcase.OELoginPageTest"> <methods> <include 
+				name="OELoginTest"></include> </methods> </class> 
+
+			<class name="com.dcpl.testcase.ReceiveParcelTest">
+				<methods>
+					<include name="createReceiveParcel"></include>	
+				</methods>
+			</class>-->		
+			<class name="com.dcpl.testcase.GoodsReceiptVocuherTest">
+				<methods>
+					<include name="createGRVForSubContractVendorRefTypeFinishedGoodSegmentGold"></include>
+					<exclude name="createGRVForSubContractVendorRefTypeFinishedGoodSegmentSilver"></exclude>
+					<exclude name="createGRVForSubContractVendorRefTypeFinishedGoodSegmentPlatinum"></exclude>
+					<exclude name="createGRVForSubContractVendorRefTypeFinishedGoodSegmentDiamond"></exclude>
+					<exclude name="createGRVForDealerVendorRefTypeFinishedGoodSegmentGold"></exclude>
+					<exclude name="createGRVForDealerVendorRefTypeFinishedGoodSegmentSilver"></exclude>
+					<exclude name="createGRVForDealerVendorRefTypeFinishedGoodSegmentPlatinum"></exclude>
+					<exclude name="createGRVForDealertVendorRefTypeFinishedGoodSegmentDiamond"></exclude>
+					<exclude name="createGRVForConsignmentVendorRefTypeFinishedGoodSegmentGold"></exclude>
+					<exclude name="createGRVForConsignmentVendorRefTypeFinishedGoodSegmentSilver"></exclude>
+					<exclude name="createGRVForConsignmentVendorRefTypeFinishedGoodSegmentPlatinum"></exclude>
+					<exclude name="createGRVForConsignmentVendorRefTypeFinishedGoodSegmentDiamond"></exclude>
+					
+				</methods>
+			</class>
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

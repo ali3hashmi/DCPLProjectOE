@@ -127,7 +127,7 @@
         <configuration>
         <testFailureIgnore>true</testFailureIgnore>
           <suiteXmlFiles>
-            <suiteXmlFile>testng_sanity.xml</suiteXmlFile>
+            <suiteXmlFile>testng_regression.xml</suiteXmlFile>
           </suiteXmlFiles>
         <systemPropertyVariables> 
           <appURL>${project.url}</appURL>

@@ -12,32 +12,52 @@
 		<groups>
 			<run>
 				<include name="Sanity"></include>
-			</run>					
+			</run>
 		</groups>
 		<classes>
-			<!-- <class name="com.dcpl.testcase.OELoginPageTest"> <methods> <include 
-				name="OELoginTest"></include> </methods> </class> 
+			<class name="com.dcpl.testcase.OELoginPageTest">
+				<methods>
+					<exclude name="OELoginTest"></exclude>
+				</methods>
+			</class>
 
 			<class name="com.dcpl.testcase.ReceiveParcelTest">
 				<methods>
-					<include name="createReceiveParcel"></include>	
+					<include name="createReceiveParcelForMaterialTypeGold"></include>
+					<include name="createReceiveParcelForMaterialTypePlatinum"></include>
+					<include name="createReceiveParcelForMaterialTypeSilver"></include>
+					<include name="createReceiveParcelForMaterialTypeDiamond"></include>
+					<include name="createReceiveParcelForMaterialTypeLooseStones"></include>
+					<include name="createReceiveParcelForMaterialTypeAccessory"></include>
 				</methods>
-			</class>-->		
+			</class>
 			<class name="com.dcpl.testcase.GoodsReceiptVocuherTest">
 				<methods>
-					<include name="createGRVForSubContractVendorRefTypeFinishedGoodSegmentGold"></include>
-					<exclude name="createGRVForSubContractVendorRefTypeFinishedGoodSegmentSilver"></exclude>
-					<exclude name="createGRVForSubContractVendorRefTypeFinishedGoodSegmentPlatinum"></exclude>
-					<exclude name="createGRVForSubContractVendorRefTypeFinishedGoodSegmentDiamond"></exclude>
-					<exclude name="createGRVForDealerVendorRefTypeFinishedGoodSegmentGold"></exclude>
-					<exclude name="createGRVForDealerVendorRefTypeFinishedGoodSegmentSilver"></exclude>
-					<exclude name="createGRVForDealerVendorRefTypeFinishedGoodSegmentPlatinum"></exclude>
-					<exclude name="createGRVForDealertVendorRefTypeFinishedGoodSegmentDiamond"></exclude>
-					<exclude name="createGRVForConsignmentVendorRefTypeFinishedGoodSegmentGold"></exclude>
-					<exclude name="createGRVForConsignmentVendorRefTypeFinishedGoodSegmentSilver"></exclude>
-					<exclude name="createGRVForConsignmentVendorRefTypeFinishedGoodSegmentPlatinum"></exclude>
-					<exclude name="createGRVForConsignmentVendorRefTypeFinishedGoodSegmentDiamond"></exclude>
-					
+					<exclude
+						name="createGRVForSubContractVendorRefTypeFinishedGoodSegmentGold"></exclude>
+					<exclude
+						name="createGRVForSubContractVendorRefTypeFinishedGoodSegmentSilver"></exclude>
+					<exclude
+						name="createGRVForSubContractVendorRefTypeFinishedGoodSegmentPlatinum"></exclude>
+					<exclude
+						name="createGRVForSubContractVendorRefTypeFinishedGoodSegmentDiamond"></exclude>
+					<exclude
+						name="createGRVForDealerVendorRefTypeFinishedGoodSegmentGold"></exclude>
+					<exclude
+						name="createGRVForDealerVendorRefTypeFinishedGoodSegmentSilver"></exclude>
+					<exclude
+						name="createGRVForDealerVendorRefTypeFinishedGoodSegmentPlatinum"></exclude>
+					<exclude
+						name="createGRVForDealertVendorRefTypeFinishedGoodSegmentDiamond"></exclude>
+					<exclude
+						name="createGRVForConsignmentVendorRefTypeFinishedGoodSegmentGold"></exclude>
+					<exclude
+						name="createGRVForConsignmentVendorRefTypeFinishedGoodSegmentSilver"></exclude>
+					<exclude
+						name="createGRVForConsignmentVendorRefTypeFinishedGoodSegmentPlatinum"></exclude>
+					<exclude
+						name="createGRVForConsignmentVendorRefTypeFinishedGoodSegmentDiamond"></exclude>
+
 				</methods>
 			</class>
 

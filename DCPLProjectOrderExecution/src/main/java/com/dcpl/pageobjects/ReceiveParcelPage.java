@@ -96,12 +96,7 @@ public class ReceiveParcelPage extends Action {
 		
 		super.click(getDriver(), createBtn);
 		super.fluentWait(getDriver(), this.recParcelVendor, 10);
-		//super.type(this.recParcelVendor, recParcelVendor);
-//		getDriver().findElement(By.xpath("//input[@id='vendors']")).click();
-//		getDriver().findElement(By.xpath("//input[@id='vendors']")).sendKeys(recParcelVendor);
-//		getDriver().findElement(By.xpath("//input[@id='vendors']")).click();
-//		getDriver().findElement(By.xpath("//input[@id='vendors']")).sendKeys(Keys.TAB);
-		//this.recParcelVendor.click();
+	
 		super.click(getDriver(), this.recParcelVendor);
 		super.type(this.recParcelVendor, recParcelVendor);
 		Thread.sleep(1000);
@@ -110,9 +105,6 @@ public class ReceiveParcelPage extends Action {
 		robot.keyPress(KeyEvent.VK_ENTER);
 		robot.keyPress(KeyEvent.VK_TAB);
 		//this.recParcelVendor.sendKeys(Keys.ENTER);
-		
-		
-		
 	    super.selectByValue(this.recParcelMode, recParcelMode);
 	    robot.keyPress(KeyEvent.VK_TAB);
 	    super.explicitWait(getDriver(), this.recParcelReceivedBy, Duration.ofSeconds(30));
@@ -142,9 +134,8 @@ public class ReceiveParcelPage extends Action {
 	
 	public String clickOnSaveBtn() throws InterruptedException {
 		
-//		super.explicitWait(getDriver(), this.recParcelSaveBtn, Duration.ofSeconds(10));
 		super.click(getDriver(), recParcelSaveBtn);
-		//Thread.sleep(3000);
+		Thread.sleep(3000);
 		String message=growlMessage.getText();
 		//System.out.println(message);
 		
